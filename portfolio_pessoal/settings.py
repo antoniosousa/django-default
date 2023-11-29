@@ -55,7 +55,9 @@ ROOT_URLCONF = "portfolio_pessoal.urls"
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [],
+        "DIRS": [
+            BASE_DIR / "portfolio_pessoal/templates",
+        ],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [

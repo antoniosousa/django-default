@@ -20,4 +20,5 @@ from django.urls import path, URLResolver, include
 urlpatterns: list[URLResolver] = [
     path('admin/', admin.site.urls),
     path("", include("paginas.urls")),
+    path("projetos/", include("projetos.urls")),
 ]
